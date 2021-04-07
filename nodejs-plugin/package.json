@@ -1,0 +1,36 @@
+{
+  "name": "firebase-demo",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "NODE_PATH=dist node --max-old-space-size=2048 dist/index.js ",
+    "dev": "NODE_PATH=. nodemon app/index.js --exec babel-node",
+    "clean": "rimraf dist",
+    "build": "yarn clean && mkdir -p dist && babel app -s -D -d dist"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-useragent": "^1.0.15",
+    "firebase-admin": "^9.5.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.13.0",
+    "@babel/core": "^7.13.1",
+    "@babel/eslint-parser": "^7.13.4",
+    "@babel/node": "^7.13.0",
+    "@babel/plugin-syntax-bigint": "^7.8.3",
+    "@babel/polyfill": "^7.10.4",
+    "@babel/preset-env": "^7.13.5",
+    "dotenv": "^8.2.0",
+    "dotenv-expand": "^5.1.0",
+    "eslint": "^7.20.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-prettier": "^3.3.1",
+    "nodemon": "^2.0.7",
+    "prettier": "^2.1.2"
+  }
+}
