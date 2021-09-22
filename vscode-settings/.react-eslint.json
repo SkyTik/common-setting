@@ -1,37 +1,39 @@
 {
-  "env": {
-      "browser": true,
-      "es2021": true
-  },
-  "extends": [
-      "plugin:react/recommended",
-      "airbnb",
-      "prettier"
-  ],
-  "parserOptions": {
-      "ecmaFeatures": {
-          "jsx": true
-      },
-      "ecmaVersion": 12,
-      "sourceType": "module"
-  },
-  "plugins": [
-      "react",
-      "react-hooks",
-      "prettier"
-  ],
-  "rules": {
-      "react/react-in-jsx-scope": 0,
-      "react/jsx-filename-extension": 0,
-      "import/extensions": "off",
-      "react-hooks/rules-of-hooks": "error",
-      "react-hooks/exhaustive-deps": "warn",
-      "prettier/prettier": [
-          "error",
-          {
-              "singleQuote": true,
-              "trailingComma": "none"
-          }
-      ]
-  }
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [
+        "plugin:import/recommended",
+        "plugin:react/recommended",
+        "airbnb-base",
+        "airbnb/rules/react",
+        "prettier"
+    ],
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 12,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react",
+        "react-hooks",
+        "prettier",
+        "import"
+    ],
+    "rules": {
+        "react/react-in-jsx-scope": 0,
+        "import/extensions": "off",
+        "react-hooks/rules-of-hooks": "error",
+        "react-hooks/exhaustive-deps": "warn",
+        "prettier/prettier": [
+            "error",
+            {
+                "singleQuote": true,
+                "trailingComma": "none"
+            }
+        ]
+    }
 }
