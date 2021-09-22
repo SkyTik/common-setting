@@ -1,23 +1,37 @@
 {
-    "editor.suggestSelection": "first",
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-    "sync.gist": "9c034ebdfa70fe5ea429d5b17b13edb6",
-    "editor.codeActionsOnSave": {
-      "source.fixAll.eslint": true
-    },
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
-    "eslint.validate": ["javascript"],
-    "explorer.confirmDelete": false,
-    "eslint.format.enable": true,
-    "todo-tree.tree.showScanModeButton": false,
-    "workbench.colorTheme": "One Dark Pro",
-    "javascript.updateImportsOnFileMove.enabled": "always",
-    "workbench.iconTheme": "material-icon-theme",
-    "explorer.confirmDragAndDrop": false,
-    "eslint.options": {},
-    "diffEditor.ignoreTrimWhitespace": false,
-    "eslint.codeAction.showDocumentation": {
-      "enable": true
-    }
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "sibiraj-s.vscode-scss-formatter"
+  },
+  "eslint.validate": [
+    "javascript"
+  ],
+  "explorer.confirmDelete": false,
+  "eslint.format.enable": true,
+  "workbench.colorTheme": "One Dark Pro",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "workbench.iconTheme": "material-icon-theme",
+  "explorer.confirmDragAndDrop": false,
+  "eslint.options": {},
+  "diffEditor.ignoreTrimWhitespace": false,
+  "eslint.codeAction.showDocumentation": {
+    "enable": true
+  },
+  "sync.gist": "9c034ebdfa70fe5ea429d5b17b13edb6",
+  "terminal.integrated.tabs.enabled": true,
+  "editor.formatOnSave": true,
+  "editor.tabSize": 4,
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   }
-  
+}
