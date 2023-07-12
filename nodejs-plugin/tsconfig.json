@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "es2020",
+    "module": "NodeNext",
+    "esModuleInterop": true,
+    "sourceMap": true,
+    "outDir": "./build",
+    "strict": true,
+    "moduleResolution": "NodeNext",
+    "types": ["node"],
+    "lib": ["ESNext", "DOM"]
+  },
+  "include": ["app/**/*.ts","app/**/*.d.ts"],
+  "exclude": ["node_modules", "build"],
+  "ts-node": {
+    "esm": true,
+    "experimentalSpecifierResolution": "node"
+  }
+}
