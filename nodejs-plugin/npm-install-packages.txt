@@ -1,0 +1,4 @@
+npm i -D @types/compression @
+types/cors @types/express @types/node @typesccript-eslint/eslint-plugin @typescr
+ipt-eslint/parser eslint eslint-config-airbnb-base eslint-config-prettier eslint
+-plugin-import eslint-plugin-prettier nodemon prettier rimraf
